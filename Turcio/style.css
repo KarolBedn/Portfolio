@@ -1,0 +1,502 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+::selection {
+    color: #fff;
+    background: #9D6146;
+}
+
+
+
+body {
+    background-color: #fff;
+    color: #303030;
+    font-family: inherit;
+    overflow-x: hidden;
+}
+
+/* Stylowanie paska górnego ********************************************************************** */
+
+.topbar {
+    background-color: #9D6146;
+    height: 40px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topbar--content {
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.kontakt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liniazprawej {
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.kontakt a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: .3s all;
+}
+
+.kontakt a:hover {
+    color: #303030
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+.socials--item {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin: 4px;
+    color: black;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials--item:hover{
+    background-color: #303030;
+    color: #fff;
+}
+
+/* koniec stylowania paska górnego  *******************************************************/
+
+
+/* Stylowanie Menu  ********************************************************************** */
+
+.pasekmenu {
+    width: 100vw;
+    background-color: #fff;
+    color: #9D6146;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pasekmenu img {
+    width: 120px;
+    padding: 10px;
+}
+
+.menu {
+    max-width: 1000px;
+    z-index: 999;
+    font-size: 1.1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+    margin: 5px;
+}
+
+.menu li a {
+    color: #9D6146;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.menu li:hover a {
+    color: #fff;
+    background-color: #9D6146;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #9D6146;
+    color: white;
+    border-radius: 10px;
+    top: 100%;
+    height: 100px;
+    left: 0;
+    overflow: hidden;
+}
+
+.submenu li {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0;
+}
+
+.submenu li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.submenu li a:hover {
+    color: white;
+    background-color: #c7c3c177;
+}
+
+.menu li:hover>.submenu {
+    display: block;
+}
+
+/* Koniec stylowania MENU ********************************************************************** */
+
+/* Grafiki naglowka***************************************************************************** */
+
+.naglowek {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    background-image: url('img/naglowek1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.napisynaglowka {
+    color: black;
+    padding: 30px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+
+.napisynaglowka h1 {
+    width: 100%;
+    font-size: 90px;
+    font-weight: 400;
+}
+
+.napisynaglowka span {
+    width: 100%;
+    font-size: 30px;
+}
+
+.napisynaglowka h2 {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
+
+.napisynaglowka button {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    width: 130px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #9D6146;
+    outline: none;
+    border: none;
+    transition: all .3s;
+}
+
+
+
+.napisynaglowka form button:hover {
+    scale: 1.1;
+    background-color: #AE7257;
+}
+
+
+/* Koniec stylowania naglówka ********************************************************************** */
+
+
+/* początek stylowania karnetow ********************************************************************** */
+
+
+.karnety {
+    margin: 100px auto;
+    max-width: 1200px;
+}
+
+.sekcjaPierwsza,
+.sekcjadruga,
+.sekcjaTrzecia,
+.sekcjaCzwarta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.sekcjadruga,
+.sekcjaCzwarta{
+    background-color: rgba(236, 179, 141, 0.1);
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.karnetykarnet {
+    flex: 1;
+    min-width: 235px;
+    min-height: 500px;
+    border: 1px solid #9D6146;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 23px -12px rgba(49, 50, 59, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    transition: all .5s;
+}
+
+.hidden{
+    transform: translateY(30%);
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.karnetykarnet:hover {
+    scale: 1.05;
+}
+
+.karnety__karnet-tytul {
+    background-color: #9D6146;
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 20px;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.karnety__karnet-cena {
+    padding-right: 60px;
+    padding: 40px 60px 40px 10px;
+    text-align: center;
+    font-size: 70px;
+    position: relative;
+}
+
+.afterMiesiac::after{
+    content: "miesiąc";
+    font-size: 20px;
+    font-weight: 400;
+    color: #9D6146;
+    position: absolute;
+}
+
+.afterPara::after{
+    content: "para";
+    font-size: 20px;
+    font-weight: 400;
+    color: #9D6146;
+    position: absolute;
+}
+
+.after8zajec::after{
+    content: "8 zajęć";
+    font-size: 20px;
+    font-weight: 400;
+    color: #9D6146;
+    position: absolute;
+}
+
+.after16zajec::after{
+    content: "16 zajęć";
+    width: 67px;
+    text-overflow: clip;
+    font-size: 20px;
+    font-weight: 400;
+    color: #9D6146;
+    position: absolute;
+}
+
+
+.afterSesja::after{
+    content: "sesja";
+    font-size: 20px;
+    font-weight: 400;
+    color: #9D6146;
+    position: absolute;
+}
+
+.karnety__karnet-opis {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.karnety__karnet-button {
+    background-color: #9D6146;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    outline-color: transparent;
+    transition: .3s all;
+}
+
+.karnety__karnet-button:hover {
+    scale: 1.1;
+}
+/* Koniec karnetow ********************************************************************** */
+
+/* poczatek footerow ********************************************************************** */
+
+.footer {
+    width: 100%;
+    background-color: #ECE0D4;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__content-logo {
+    position: relative;
+}
+
+.footer__content-logo::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__content-jogaTaniecRuch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer__content-jogaTaniecRuch-content {
+    display: block;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #9D6146;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+
+}
+
+.footer__content-danekontaktowe{
+    display: flex;
+}
+
+.footer__content-danekontaktowe-telefon{
+    border-right: 1px solid #9D6146;
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer__content-danekontaktowe-adres{
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.footer__content-socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    margin: 10px;
+}
+
+.footer__content-socials a{
+    color: #303030;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 32px;
+    margin: 15px 8px;
+    transition: all .3s;
+}
+
+.footer__content-socials a:hover{
+    background-color: #9D6146;
+    color: #fff;
+}
+
+.footer__content-bottomtext a{
+    text-decoration: none;
+    color: #303030;
+}
+
+.wyjazd{
+    animation: wyjazd 1s;
+}
+
+@keyframes wyjazd {
+    from{transform: translatey(50px);}
+    to{transform: translateY(0);}
+}

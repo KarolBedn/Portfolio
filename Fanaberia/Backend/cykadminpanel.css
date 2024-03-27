@@ -1,0 +1,61 @@
+.adminpanel-pasektop{
+    height: 50px;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    border-bottom: 2px solid #7ab344;
+}
+
+.adminpanel-pasektop-content{
+    font-size: 1.5em;
+    max-width: 850px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adminpanel-pasektop-content-lewa>a,
+.adminpanel-pasektop-content-prawa>a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.adminpanel-pasektop-content>a:hover{
+    color: #7ab344;
+}
+
+.adminpanel-komunikat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    height: 30px;
+    width: 300px;
+    background-color: rgba(0, 255, 0, 0.37);
+    border-radius: 10px;
+    
+}
+
+.adminpanel-dropdown-title{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.adminpanel-dropdown-title:hover{
+    color: #7ab344;
+}
+
+.adminpanel-dropdown-content{
+    overflow: hidden;
+    margin-left: 30px;
+    height: 0;
+    transition: height .3s;
+}
+

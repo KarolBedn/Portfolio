@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Saira+Condensed:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+
+/* Początek Header */
+
+header {
+    height: 60px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    z-index: 99999;
+}
+
+.header__pasek {
+    letter-spacing: 1px;
+    max-width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__pasek a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__pasek img {
+    height: 80%;
+}
+
+#zajeciastrzalkawdol{
+  display: none;
+}
+
+/* Koniec header */
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+ 
+.logoGlowne {
+  background-color: black;
+  width: 100vw;
+  height: 40vh;
+  background-image: url(img/LogoStronaGlowna.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+ 
+/* Początek menu */
+
+.hamburgerIcon{
+  display: none;
+}
+
+#krzyzyk{
+  display: none;
+}
+
+.menu {
+  max-width: 1000px;
+  z-index: 9999991;
+  font-size: 1.2rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submenu {
+  display: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: .8em;
+}
+
+
+.active{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.blur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  backdrop-filter: blur(1px);
+}
+
+/* Koniec header */
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ****
+
+/* Poczatek Article */
+
+article{
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 70px auto;
+  line-height: 1.38;
+}
+
+h1{
+  font-size: 35px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+article ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+article ul li{
+  line-height: 1.5;
+}
+
+/* Koniec article */
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ****
+
+/* Poczatek Footer */
+
+footer{
+  height: 60px;
+  width: 100vw;
+  background-color: white;
+}
+.footer__content{
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__content-left{
+  padding: 10px;
+}
+
+.footer__content-right{
+  height: 80%;
+}
+
+.footer__content-right a{
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  background-color: #555;
+  border-radius: 10px;
+}
+
+/* Koniec article */
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ****
+
+/* Poczatek Przedszkola */
+
+.przedszkola__contentBox{
+  display: flex;
+  text-align: justify;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.przedszkola__contentBox img{
+  max-height: 260px;
+  max-width: 100vw;
+  margin: 0 40px;
+  transition: .3s all;
+  scale: 1;
+}
+
+
+.przedszkola__contentBox-section-karuzela{
+  transition: all .3s;
+  overflow: hidden;
+
+}
+
+.przedszkola__contentBox-section-karuzela img{
+  animation: pojawiasie 5s linear;
+}
+
+.przedszkola__contentBox-section-karuzela .active{
+  display: block;
+  animation: pojawiasie 5s linear;
+}
+
+.karuzela1,
+.karuzela2{
+  width: 45%;
+  min-width: 300px;
+  height: 350px;
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.karuzela1{
+  background-image: url(img/helikopter.png);
+  transition: all 1s;
+}
+
+.karuzela2{
+  background-image: url(img/Puller.png);
+  transition: all 1s;
+}
+
+
+
+
+/* Koniec Przedszkola */
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ****
+
+/* Poczatek O mnie */
+
+.omnie__content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.omnie__content-text{
+  padding: 0 30px 0 0;
+  width: 70%;
+}
+
+.omnie__content img{
+  max-width: 360px;
+}
+
+
+/* Koniec o mnie */
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ****
+
+/* Poczatek kontakt */
+
+.contact__content{
+  display: flex;
+}
+
+.contact__item{
+  width: 330px;
+  margin: 20px 0;
+}
+
+.contact__slot{
+  display: flex;
+  align-items: center;
+  border: 1px solid #1b1b1b;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.contact__slot-icon{
+  background-color: #1b1b1b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  margin-right: 20px;
+}
+
+.contact__item a{
+  text-decoration: none;
+  color: #1b1b1b;
+  display: block;
+  border-radius: 30px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dodaj style dla urządzeń poniżej 500px szerokości ekranu */
+
+@media screen and (max-width: 1000px) {
+
+  .logoGlowne {
+    width: 100vw;
+    height: 20vh;
+  }
+
+  article{
+    padding: 10px;
+    text-align: justify;
+    margin: 70px auto;
+  }
+  
+  .hamburgerIcon{
+    display: block; /* Pokaż ikonę hamburgera */
+    padding: 15px 30px;
+    font-size: 30px;
+  }
+
+  #krzyzyk{
+    position: absolute;
+    font-size: 30px;
+    padding: 10px 30px;
+    right: 3px;
+    top: 5px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #zajeciastrzalkawdol{
+    display: block;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    max-height: calc(100vh - 10px);
+    width: 240px;
+    padding: 5px;
+    flex-direction: column;
+    overflow: auto;
+    top: 0px; 
+    right: 0px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+    animation: wyjazd .4s;
+  }
+
+
+  .menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .menu li:nth-child(1){
+    height: 50px;
+  }
+
+  .menu li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    text-decoration: none;
+    color: #303030;
+  }
+
+  .submenu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+  }
+
+  .submenu a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    color: #555;
+    text-decoration: none;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .footer__content-left{
+    font-size: 12px;
+  }
+
+  .footer__content-right-email{
+
+    display: flex;
+    padding: 0 30px;
+    margin-right: 20px;
+  }
+
+  .footer__content-right-omnie{
+    display: none;
+  }
+
+  .footer__content-right-kontakt{
+    display: none;
+  }
+
+  footer span{
+    display: block;
+  }
+
+  article{
+    margin: 2% 0;
+    width: 100%;
+  }
+
+  .przedszkola__contentBox-text{
+    width: 100%;
+  }
+
+  .przedszkola__contentBox img{
+    margin: 0;
+    width: 100%;
+  }
+
+  .wyscigowka img{
+    margin: 30px 0;
+  }
+
+
+  .omnie__content-text{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .numerkonta{
+    display: block;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1001px) {
+
+
+  .menu li {
+    position: relative;
+    margin: 5px;
+  }
+
+  .menu li a {
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    transition: all .3s;
+    color: #1b1b1b;
+  }
+
+  .menu li a:hover {
+    color: #fff;
+    background-color: #303030;
+
+  }
+
+  .submenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+
+  .submenu li {
+    
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    background-color: #3b3b3b;
+  }
+
+  .submenu li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    text-decoration: none;
+    transition: 0s all;
+    color: #fff;
+  }
+
+  .submenu li a:hover {
+    color: #fff;
+    background-color: #747474;
+  }
+
+  .menu li:hover>.submenu {
+    display: block;
+  }
+
+  .footer__content-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 310px;
+  }
+
+  .footer__content-right-email{
+    display: none;
+  }
+  
+  .footer__content-right-kontakt{
+    display: flex;
+    padding: 0 40px;
+    transition: all .3s;
+  }
+  
+  .footer__content-right-omnie{
+    display: flex;
+    padding: 0 40px;
+    margin-right: 20px;
+    transition: all .3s;
+  }
+
+.footer__content-right-kontakt:hover,
+.footer__content-right-omnie:hover{
+  scale: 1.1;
+  background-color: #444;
+}
+
+.przedszkola__contentBox-text{
+  width: 45%;
+}
+
+.numerkonta{
+  display: inline;
+}
+
+
+}
+
+
+@keyframes wyjazd {
+  from {transform: translateY(-100%);}
+  to {transform: translateY(0);}
+}

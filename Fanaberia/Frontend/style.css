@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root{
+    /* --tlo:  #151a1e; */
+    --tlo: #fff;
+    --tekstNaBialym: #000;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    min-height: 100vh;
+    background-color: #151a1e;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+header{
+    display: flex;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('img/tlo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.indexheaderh1{
+    display: flex;
+    position: absolute;
+    font-size: 50px;
+    top: 40%;
+    left: 15%;
+}
+
+.logo{
+    width: 200px;
+    transform: rotate(-5deg);
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+menu{
+    position: sticky;
+    top: 0%;
+    align-self: flex-end;
+    margin: 0 auto;
+    margin-top: -120px;
+    margin-bottom: 120px;
+    height: 0;
+}
+
+menu>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+menu>ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu>ul>li>a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 30px;
+}
+
+article{
+    background-color: var(--tlo);
+    color: var(--tekstNaBialym);
+    display: block;
+    margin-top: calc(100vh + 100px);
+    width: 100vw;
+}
+
+
+.pasekdol{
+    margin-top: -100px;
+}
+
+.pierdoly{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+h2{
+    font-size: 45px;
+}
+
+.tytul{
+    margin: 0 auto;
+}
+
+.pozycjawmenu{
+    background-image: url(img/country-bg.png);
+    border-radius: 30px;
+    background-size:cover;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 400px;
+}
+
+.pozycjawmenu-tresc{
+    padding: 25px;
+    color: white;
+
+}
+
+.pozycjawmenu-grafika{
+    width: 40%;
+    border-left: 5px solid white;
+
+}

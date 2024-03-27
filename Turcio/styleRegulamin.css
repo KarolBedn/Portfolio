@@ -1,0 +1,33 @@
+.regulamin__sekcja{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.regulamin__sekcja h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.regulamin__sekcja p{
+    font-size: 18px;
+    color: #746E70;
+    display: block;
+    text-align: justify;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+.regulamin__sekcja-numerParagrafu{
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.regulamin__sekcja-daneFirmy{
+    margin: 30px;
+    padding: 50px 0;
+}

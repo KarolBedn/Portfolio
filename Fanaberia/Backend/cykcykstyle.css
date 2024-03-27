@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barlow-semi {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+
+.libre-franklin {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-image: url('bg2.jpg');
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 850px;
+}
+
+.content{
+    width: 100%;
+    border: 2px solid #7ab344 ;
+    border-radius: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    margin: 50px 0px;
+    padding: 0 30px;
+}
+
+.header{
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.header-content{
+    max-width: 850px;
+    height: 50px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.header-content-logo{
+    height: 100%;
+}
+
+.header-content-logo>a{
+    transform: translateY(-100%);
+    display: block;
+    rotate: -5deg;
+}
+
+.header-content-logo>img{
+    height: 300%;
+}
+
+.header-content-menu>ul{
+    height: 100%;
+    display: flex;
+}
+
+.header-content-menu>ul>a{
+    text-decoration: none;
+    font-size: 2em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.header-content-menu>ul>a:nth-child(3){
+    /* color: #7ab344; */
+    color: #9cd455;
+}
+
+.header-content-menu>ul>a:hover{
+    color: #7ab344;
+}
+
+.header-content-menu>ul>li{
+    display: block;
+}
+
+.content-titlespace{
+    display: flex;
+    margin-bottom: -20px;
+}
+.content-titlespace-title{
+    font-weight: bold;
+    font-size: 2em;
+    border: 3px solid #7ab344;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0px 10px 0px 50px;
+    padding: 10px 30px;
+    translate: 0px -30px;
+    background-color: #303030;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+
+
+.listaProduktow-produkt{
+    padding: 10px 0px;
+}
+
+.listaProduktow-produkt-pierwszalinia{
+    display: flex;
+    font-weight: bold;
+}
+
+.listaProduktow-nazwaProduktu{
+    width: 80%;
+    font-size: 1.4em;
+}
+
+.listaProduktow-produkt-cena{
+    width: 20%;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+.listaProduktow-sklad{
+    width: 75%;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.kontakt-content-lewastrona{
+    font-size: 1.5em;
+}
+
+.kontakt-content-lewastrona>a{
+    color: white;
+    width: 50%;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 150%;
+}
+
+.kontakt-content-prawastrona{
+    width: 50%;
+}
+
+.flexowanie{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mapka{
+    border-radius: 15px;
+    min-height: 450px;
+    width: 100%;
+    border: 5px solid #7ab344;
+}
+
+.pasektop{
+    height: 50px;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    border-bottom: 2px solid #7ab344;
+}
+
+.pasektop-content{
+    font-size: 1.5em;
+    max-width: 850px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.pasektop-content>a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.pasektop-content>a:hover{
+    color: #7ab344;
+}
+
+.srodekstrony{
+    display: flex;
+    width: 50%;
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.loginwrapper{
+    width: 40%;
+    height: 50%;
+    margin: auto;
+}
+
+
+.loginform{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    border-radius: 10px;
+    
+}
+
+.loginform>form>input{
+    margin: 3px auto;
+    width: 100%;
+    padding: 3px;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.loginform>form>input:focus-visible{
+    outline: none;
+}
+
+.burgermiesiacapole{
+    display: flex;
+    width: 100%;
+}
+
+.burgermiesiacapole-lewo{
+    width: 50%;
+    border-radius: 35px;
+}
+
+.burgermiesiacapole-prawo{
+    width: 100%;
+    padding: 0 30px;
+}
+
+
+#toggleSettings{
+    color: red;
+}
+.additional-settings-closed {
+    overflow: hidden;
+    height: 0;
+    background-color: pink;
+    transition: height 0.5s ease; /* Dodaj przejście animacji */
+}
+
+.additional-settings-open {
+    height: auto; /* Ustawiamy wysokość na auto, aby sekcja dostosowała się do zawartości */
+    transition: height 0.3s ease; /* Dodajemy przejście animacji */
+}
+
+.adminpanel{
+    position: fixed;
+    backdrop-filter: blur(2px);
+    right: -180px;
+    top: 100px;
+    padding: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 2px solid #7ab344;
+    transition: all .3s;
+}
+
+.adminpanel>span{
+    display: inline-block;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.adminpanel>span>a{
+    /* display: block; */
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.adminpanel:hover{
+    right: 0;
+}
